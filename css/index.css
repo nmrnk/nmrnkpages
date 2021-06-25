@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*---------------------------------------------
+
+1 共通
+2 header
+ profile
+ skill
+ next
+ footer  
+ 
+---------------------------------------------*/
+
+img {
+  width: 100%;
+}
+.index_section_content {
+  width: calc(100% - 30px);
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.index_section_inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.index_section_element6 {
+  max-width: calc(((100% / 12) * 12) - 30px);
+  flex-basis: calc(((100% / 12) * 12) - 30px);
+  margin: 0 15px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .index_section_element6 {
+    display: block;
+    max-width: calc(((100% / 12) * 6) - 30px);
+    flex-basis: calc(((100% / 12) * 6) - 30px);
+    margin: 0 15px 30px;
+  }
+}
