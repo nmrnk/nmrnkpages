@@ -10,9 +10,20 @@
  footer  
  
 ---------------------------------------------*/
-
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Arial Black';
+}
 img {
   width: 100%;
+}
+.dn-sp {
+  display: none;
+}
+.index_section {
+  padding: 50px 0;
 }
 .index_section_content {
   width: calc(100% - 30px);
@@ -22,20 +33,99 @@ img {
 .index_section_inner {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .index_section_element6 {
   max-width: calc(((100% / 12) * 12) - 30px);
   flex-basis: calc(((100% / 12) * 12) - 30px);
   margin: 0 15px 10px;
 }
-
+h2.index_section_ttl {
+  font-size: 2.4rem;
+}
 @media screen and (min-width: 768px) {
+  .dn-sp {
+    display: block;
+  }
+  .index_section {
+    padding: 140px 0;
+  }
+  .index_section_element1 {
+    display: block;
+    max-width: calc(((100% / 12) * 1) - 30px);
+    flex-basis: calc(((100% / 12) * 1) - 30px);
+    margin: 0 15px 30px;
+  }
+  .index_section_element5 {
+    display: block;
+    max-width: calc(((100% / 12) * 5) - 30px);
+    flex-basis: calc(((100% / 12) * 5) - 30px);
+    margin: 0 15px 30px;
+  }
   .index_section_element6 {
     display: block;
     max-width: calc(((100% / 12) * 6) - 30px);
     flex-basis: calc(((100% / 12) * 6) - 30px);
     margin: 0 15px 30px;
+  }
+  h2.index_section_ttl {
+    font-size: 4.8rem;
+  }
+}
+
+/* header */
+.header {
+  height: 100px;
+}
+.header_logo {
+  height: 100%;
+  margin: auto 0;
+}
+.header_content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header_logo img {
+}
+.header_menu {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: auto 0;
+}
+.header_menu li a {
+  font-size: 3rem;
+}
+@media screen and (min-width: 767px) {
+  .header_menu li a {
+    font-size: 1.8vw;
+  }
+}
+/* main */
+.index_hero_content {
+  width: 100%;
+  padding-top: 146.6%;
+  background: url('../img/main1.jpg') no-repeat center/cover;
+  max-height: 800px;
+}
+@media screen and (min-width: 767px) {
+  .index_hero_content {
+    padding-top: 55.5%;
+  }
+}
+
+/* profile */
+#profile {
+  background: #f2eae7;
+}
+.profile_ttl_sub {
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 767px) {
+  .profile_ttl_sub {
+    font-size: 2.8rem;
   }
 }
