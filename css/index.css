@@ -4,17 +4,24 @@
 
 1 共通
 2 header
- profile
- skill
- next
- footer  
+3 profile
+4 skill
+5 next
+6 footer  
  
 ---------------------------------------------*/
 html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Arial Black';
+  font-family: 'Arial Black', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+a {
+  cursor: pointer;
+}
+.ft-txt {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  line-height: 1.3;
 }
 img {
   width: 100%;
@@ -34,7 +41,15 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
+  width: calc(100% + 30px);
+  margin: 0 -15px;
+}
+.index_section_element4 {
+  display: block;
+  max-width: calc(((100% / 12) * 4) - 14px);
+  flex-basis: calc(((100% / 12) * 4) - 14px);
+  margin: 0 7px 30px;
 }
 .index_section_element6 {
   max-width: calc(((100% / 12) * 12) - 30px);
@@ -43,6 +58,8 @@ img {
 }
 h2.index_section_ttl {
   font-size: 2.4rem;
+  margin-bottom: 25px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .dn-sp {
@@ -51,10 +68,19 @@ h2.index_section_ttl {
   .index_section {
     padding: 140px 0;
   }
+  .ft-txt {
+    line-height: 2;
+  }
   .index_section_element1 {
     display: block;
     max-width: calc(((100% / 12) * 1) - 30px);
     flex-basis: calc(((100% / 12) * 1) - 30px);
+    margin: 0 15px 30px;
+  }
+  .index_section_element4 {
+    display: block;
+    max-width: calc(((100% / 12) * 4) - 30px);
+    flex-basis: calc(((100% / 12) * 4) - 30px);
     margin: 0 15px 30px;
   }
   .index_section_element5 {
@@ -71,6 +97,7 @@ h2.index_section_ttl {
   }
   h2.index_section_ttl {
     font-size: 4.8rem;
+    text-align: left;
   }
 }
 
@@ -121,11 +148,144 @@ h2.index_section_ttl {
 #profile {
   background: #f2eae7;
 }
+#profile h2.index_section_ttl {
+  margin-bottom: 5px;
+}
 .profile_ttl_sub {
   font-size: 1.4rem;
+  text-align: center;
+}
+p.profile_txt {
+  margin: 20px 0;
+  font-size: 1.4rem;
+}
+.profile_sns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% + 30px);
+  margin: 0 -15px;
+}
+.profile_sns_icon {
+  max-width: calc(((100% / 5) * 1) - 30px);
+  flex-basis: calc(((100% / 5) * 1) - 30px);
+  margin: 0 15px 10px;
 }
 @media screen and (min-width: 767px) {
   .profile_ttl_sub {
     font-size: 2.8rem;
+    text-align: left;
+  }
+  .profile_sns {
+    margin: 50px -15px;
+  }
+  .profile_sns_icon {
+    max-width: calc(((100% / 6) * 1) - 30px);
+    flex-basis: calc(((100% / 6) * 1) - 30px);
+  }
+}
+
+/* skill  */
+.skill_figure {
+}
+.skill_figure_ttl {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.skill_txt_ttl {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.skill_list {
+  margin-bottom: 30px;
+}
+.skill_item {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+@media screen and (min-width: 767px) {
+  .skill_figure {
+    order: 2;
+  }
+  .skill_figure_ttl {
+    font-size: 2.8rem;
+  }
+  .skill_txt {
+    order: 1;
+  }
+  .skill_txt_ttl {
+    font-size: 2.8rem;
+  }
+  .skill_list {
+    margin-bottom: 50px;
+  }
+  .skill_item {
+    font-size: 1.6rem;
+  }
+}
+
+/* 5 next */
+.index_next {
+  background: #bbc9c0;
+}
+.index_next .index_section_ttl {
+  color: #fff;
+  text-align: center;
+}
+.index_next .index_section_inner {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+.next_icon {
+  width: 80px;
+  margin: 0 auto 25px;
+  color: #737474;
+  border: 1px solid #737474;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  padding: 18px 0 23px;
+}
+.next_btn {
+  display: block;
+  background: #6d6d6d;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 30px 7px;
+  transition: all ease 0.2s;
+}
+.next_btn:hover {
+  background: rgba(109, 109, 109, 0.7);
+}
+@media screen and (min-width: 767px) {
+  .next_icon {
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    padding: 15px 0 26px;
+  }
+  .next_btn {
+    font-size: 2.8rem;
+  }
+}
+
+/* footer  */
+.footer {
+  background: #bbc9c0;
+}
+.copy {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+@media screen and (min-width: 767px) {
+  .copy {
+    font-size: 1.6rem;
+    padding: 70px 0;
   }
 }
