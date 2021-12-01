@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/destyle.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
   <title>portfolio</title>
 </head>
@@ -18,19 +20,35 @@
         </figure>
         <ul class="header_menu index_section_element5">
           <li><a href="#profile">ABOUT</a></li>
-          <li><a href="#work">WORKS</a></li>
+          <li><a href="./work/">WORKS</a></li>
           <li><a href="#study">STUDY</a></li>
         </ul>
       </div>
     </div>
   </header>
 
-  <div class="header_sp dn-pc"></div>
+  <div class="top_logo dn-pc"><a href="#"><img src="./img/header-logo.png" alt=""></a></div>
+  <div class="nav_sp dn-pc" id="nav">
+    <ul class="nav_lists">
+      <li class="nav_list_item"><a href="#profile">ABOUT</a></li>
+      <li class="nav_list_item"><a href="./work/">WORKS</a></li>
+      <li class="nav_list_item"><a href="#study">STUDY</a></li>
+      <li class="nav_list_item"><a href="https://twitter.com/miyu___kichi_" target="_blank"><i
+            class="fab fa-twitter fa-lg"></i></a></li>
+      <li class="nav_list_item"><a href="https://www.instagram.com/miyuki__yukimi" target="_blank"><i
+            class="fab fa-instagram fa-lg"></i></a></li>
+      <li class="nav_list_item"><a href="mailto:miy0916uki@gmail.com" target="_blank"><i
+            class="fas fa-envelope fa-lg"></i></a></li>
+    </ul>
+  </div>
+  <div class="nav_sp_bg dn-pc" id="menuBg"><span></span></div>
+  <div class="nav_sp_btn dn-pc" id="menuBtn"><span></span></div>
+
 
   <main class="l-main">
     <section class="index_hero">
-      <div class="index_hero_content">
-
+      <div class="index_hero_content bg-slider">
+        <p class="index_hero_txt" id="mvTxt">MIYUKI NOGUCHI<br><span>Profile Site</span></p>
       </div>
     </section>
     <section class="index_profile index_section" id="profile">
@@ -43,30 +61,48 @@
             <h2 class="index_section_ttl">MIYUKI NOGUCHI</h2>
             <p class="profile_ttl_sub">Web Developer</p>
             <p class="profile_txt ft-txt">初めまして。野口未由希（のぐちみゆき）と申します。<br>
-              Webサイトを作り始めて実務経験３年目のデベロッパーです。
+              Webサイト制作３年目です。
               LP制作やサイトのコンテンツ追加、更新業務などのコーディングを中心に、
-              バナー制作、ディレクションの業務に日々取り組んでおります。</p>
-            <p class="profile_txt ft-txt">サイト制作が楽しくて、
-              集中して作業していると時間がたつのはあっという間です。
-              日々勉強。今日もモクモクと制作作業に取り組みます。</p>
+              バナー制作、ディレクション業務に日々取り組んでいます。</p>
+            <p class="profile_txt ft-txt">
+              最近ミラーレスを購入したので、趣味で撮影やレタッチを勉強中です。初ショットの近所の野良猫チビの写真を載せます。<br>動画編集にも興味があり、少しずつ勉強中です。<br>
+            </p>
             <ul class="profile_sns">
-              <li class="profile_sns_icon"><a href="#"><img src="./img/twitter.png" alt=""></a></li>
-              <li class="profile_sns_icon"><a href="#"><img src="./img/instagram.png" alt=""></a></li>
-              <li class="profile_sns_icon"><a href="#"><img src="./img/mail.png" alt=""></a></li>
+              <li class="profile_sns_icon animate__animated animate__bounce twitter animate__infinite">
+                <a href="https://twitter.com/miyu___kichi_"><img src="./img/twitter.png" alt=""></a>
+              </li>
+              <li class="profile_sns_icon"><a href="https://www.instagram.com/miyuki__yukimi"><img
+                    src="./img/instagram.png" alt=""></a></li>
+              <li class="profile_sns_icon"><a href="mailto:miy0916uki@gmail.com"><img src="./img/mail.png" alt=""></a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="index_skill index_section">
+    <section class="index_skill index_section" id="skill">
       <div class="index_section_content">
         <h2 class="index_section_ttl">SKILLS</h2>
         <div class="index_section_inner">
           <div class="index_section_element6 skill_figure">
             <p class="skill_figure_ttl">Practical Ratio</p>
+            <div class="skill_figure_box">
+              <div class="skill_figure_list coading">
+                <p class="skill_figure_text">Coading</p>
+                <div class="skill_figure_item skill_coading"></div>
+              </div>
+              <div class="skill_figure_list design">
+                <p class="skill_figure_text">Design</p>
+                <div class="skill_figure_item skill_coading"></div>
+              </div>
+              <div class="skill_figure_list direction">
+                <p class="skill_figure_text">Direction</p>
+                <div class="skill_figure_item skill_coading"></div>
+              </div>
+            </div>
           </div>
           <dl class="index_section_element6 skill_txt">
-            <dt class="skill_txt_ttl">Coading</dt>
+            <dt class="skill_txt_ttl coading">Coading</dt>
             <dd class="skill_txt_items">
               <ul class="skill_list">
                 <li class="skill_item">●HTML/CSS</li>
@@ -82,7 +118,7 @@
                 <li class="skill_item">●webpack</li>
               </ul>
             </dd>
-            <dt class="skill_txt_ttl">Design</dt>
+            <dt class="skill_txt_ttl design">Design</dt>
             <dd class="skill_txt_items">
               <ul class="skill_list">
                 <li class="skill_item">●Photoshop</li>
@@ -90,7 +126,7 @@
                 <li class="skill_item">●XD</li>
               </ul>
             </dd>
-            <dt class="skill_txt_ttl">Direction</dt>
+            <dt class="skill_txt_ttl direction">Direction</dt>
             <dd class="skill_txt_items">
               <ul class="skill_list">
                 <li class="skill_item">●Backlog</li>
@@ -112,9 +148,9 @@
         <h2 class="index_section_ttl">Thanks for reading!</h2>
         <p class="next_icon">next<br>line up</p>
         <div class="index_section_inner">
-          <a class="index_section_element4 next_btn">Web Site</a>
-          <a class="index_section_element4 next_btn">Banner</a>
-          <a class="index_section_element4 next_btn">Retouch</a>
+          <a href="./work/" class="index_section_element4 next_btn">Web Site</a>
+          <a href="./work/" class="index_section_element4 next_btn" id="aa">Banner</a>
+          <a href="./work/" class="index_section_element4 next_btn">Retouch</a>
         </div>
 
       </div>
@@ -124,7 +160,9 @@
   <footer class="footer">
     <p class="copy">© 2021 Miyuki Noguchi</p>
   </footer>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/lib/jquery.bgswitcher.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

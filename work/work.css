@@ -1,0 +1,140 @@
+.works {
+  background: #f2f5f7;
+}
+.works .index_section_ttl {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.work_icon_img {
+  width: 60%;
+  max-width: 100px;
+  margin: 0 auto 25px;
+}
+.work2 .work_icon_img {
+  width: 44%;
+}
+.work_icon_txt {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.next_btn.selected {
+  background: #f27360;
+}
+@media screen and (min-width: 767px) {
+  .works .index_section_ttl {
+    margin-bottom: 130px;
+  }
+  .work_icon_txt {
+    font-size: 1.7rem;
+  }
+  .work2 .work_icon_img {
+    max-width: 74px;
+  }
+}
+
+/* work contents */
+.tab .index_section_inner {
+  justify-content: start;
+}
+@media screen and (max-width: 767px) {
+  .tab .index_section_element4 {
+    max-width: calc(((100% / 12) * 6) - 30px);
+    flex-basis: calc(((100% / 12) * 6) - 30px);
+    margin: 0 15px 10px;
+  }
+  .tab .index_section_element3 {
+    max-width: calc(((100% / 12) * 4) - 10px);
+    flex-basis: calc(((100% / 12) * 4) - 10px);
+    margin: 0 5px 10px;
+  }
+}
+.work_figure {
+  margin-bottom: 20px;
+}
+.work_txt {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.8;
+}
+.work_txt:hover {
+  opacity: 0.7;
+}
+.work_txt span {
+  color: #f27360;
+  font-weight: bold;
+}
+@media screen and (min-width: 767px) {
+  .work_figure {
+    margin-bottom: 35px;
+  }
+  .work_txt {
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+}
+
+/* work2  */
+.work2_ttl {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.work2_ttl:not(:first-child) {
+  margin-top: 30px;
+}
+@media screen and (min-width: 767px) {
+  .work2_ttl {
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+  }
+  .work2_ttl:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+
+/* モーダル */
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: none;
+}
+.modal_bg {
+  background: #000;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.modal_content {
+  position: fixed;
+  z-index: 11;
+  background: #f2f5f7;
+  width: 90%;
+  max-width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+.modal_close_btn {
+  width: 70px;
+  background: #bbc9c0;
+  color: #fff;
+  padding: 10px 10px;
+  display: block;
+  text-align: center;
+  margin: 10px 0 0 auto;
+  font-weight: bold;
+}
+@media screen and (min-width: 767px) {
+  .modal_content {
+  }
+}
