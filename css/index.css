@@ -77,7 +77,7 @@ h2.index_section_ttl {
     line-height: 2;
   }
   .l-main {
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
   .index_section_element1 {
     display: block;
@@ -123,7 +123,7 @@ h2.index_section_ttl {
 /* header */
 .header {
   height: 100px;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   background: #fff;
   z-index: 100;
