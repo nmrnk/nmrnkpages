@@ -13,10 +13,10 @@ $(function () {
   // mvスライド
   $('.bg-slider').bgSwitcher({
     images: [
-      '../img/main1.jpg',
-      '../img/main2.jpg',
-      '../img/main3.jpg',
-      '../img/main4.jpg',
+      '/img/main1.jpg',
+      '/img/main2.jpg',
+      '/img/main3.jpg',
+      '/img/main4.jpg',
     ], // 切り替える背景画像を指定
     interval: 3000,
   });
