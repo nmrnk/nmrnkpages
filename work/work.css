@@ -76,6 +76,19 @@
 }
 
 /* work2  */
+.work2 .work_figure {
+  position: relative;
+}
+.work2 .work_figure::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('./img/expansion.png') no-repeat center/contain;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
 .work2_ttl {
   font-size: 1.7rem;
   text-align: center;
@@ -92,6 +105,10 @@
   }
   .work2_ttl:not(:first-child) {
     margin-top: 50px;
+  }
+  .work2 .work_figure::before {
+    width: 30px;
+    height: 30px;
   }
 }
 
