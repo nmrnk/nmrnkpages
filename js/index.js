@@ -13,14 +13,14 @@ $(function () {
   // mvスライド
   $('.bg-slider').bgSwitcher({
     images: [
-      // 'https://nmrnk.github.io/nmrnkpages/img/main1.jpg',
-      // 'https://nmrnk.github.io/nmrnkpages/img/main2.jpg',
-      // 'https://nmrnk.github.io/nmrnkpages/img/main3.jpg',
-      // 'https://nmrnk.github.io/nmrnkpages/img/main4.jpg',
+      'https://nmrnk.github.io/nmrnkpages/img/main1.jpg',
+      'https://nmrnk.github.io/nmrnkpages/img/main2.jpg',
+      'https://nmrnk.github.io/nmrnkpages/img/main3.jpg',
+      'https://nmrnk.github.io/nmrnkpages/img/main4.jpg',
       '../img/main1.jpg',
-      '../img/main2.jpg',
-      '../img/main3.jpg',
-      '../img/main4.jpg',
+      // '../img/main2.jpg',
+      // '../img/main3.jpg',
+      // '../img/main4.jpg',
     ], // 切り替える背景画像を指定
     interval: 3000,
   });
