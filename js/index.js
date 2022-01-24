@@ -17,7 +17,7 @@ $(function () {
       'https://nmrnk.github.io/nmrnkpages/img/main2.jpg',
       'https://nmrnk.github.io/nmrnkpages/img/main3.jpg',
       'https://nmrnk.github.io/nmrnkpages/img/main4.jpg',
-      '../img/main1.jpg',
+      // '../img/main1.jpg',
       // '../img/main2.jpg',
       // '../img/main3.jpg',
       // '../img/main4.jpg',
