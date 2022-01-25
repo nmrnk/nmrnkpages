@@ -65,8 +65,8 @@ img {
   margin: 0 15px 10px;
 }
 h2.index_section_ttl {
-  font-size: 2.8rem;
-  margin-bottom: 25px;
+  font-size: 1.8rem;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: bold;
 }
@@ -123,8 +123,8 @@ h2.index_section_ttl {
     margin: 0 15px 30px;
   }
   h2.index_section_ttl {
-    font-size: 2.8rem;
-    text-align: left;
+    font-size: 2.6rem;
+    margin-bottom: 130px;
   }
 }
 @media (max-width: 1020px) and (min-width: 768px) {
@@ -281,7 +281,6 @@ h2.index_section_ttl {
   background: url('../img/main1.jpg') no-repeat center/cover;
   max-height: 800px;
   position: relative;
-  background-attachment: fixed;
 }
 .index_hero_txt {
   font-size: 1.2rem;
@@ -299,6 +298,7 @@ h2.index_section_ttl {
 @media screen and (min-width: 767px) {
   .index_hero_content {
     padding-top: 55.5%;
+    background-attachment: fixed;
   }
   .index_hero_txt {
     font-size: 2rem;
@@ -316,9 +316,6 @@ h2.index_section_ttl {
   position: relative;
   z-index: -2;
 }
-#profile h2.index_section_ttl {
-  margin-bottom: 5px;
-}
 .profile_img {
   max-width: 200px;
   margin: 0 auto 25px;
@@ -335,6 +332,12 @@ h2.index_section_ttl {
   left: -20px;
   z-index: -1;
 }
+.profile_name {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+}
 .profile_ttl_sub {
   font-size: 1.4rem;
   text-align: center;
@@ -343,6 +346,11 @@ h2.index_section_ttl {
 p.profile_txt {
   margin: 20px 0;
   font-size: 1.4rem;
+  line-height: 1.7;
+}
+p.profile_txt span {
+  display: block;
+  margin-bottom: 5px;
 }
 .profile_sns {
   display: flex;
@@ -358,9 +366,14 @@ p.profile_txt {
   margin: 0 15px 10px;
 }
 @media screen and (min-width: 769px) {
-  .profile_ttl_sub {
-    font-size: 2.8rem;
+  .profile_name {
+    font-size: 2.4rem;
     text-align: left;
+  }
+  .profile_ttl_sub {
+    font-size: 1.6rem;
+    text-align: left;
+    margin-top: 3px;
   }
   .profile_img {
     max-width: 440px;
@@ -514,7 +527,7 @@ p.profile_txt {
     order: 2;
   }
   .skill_figure_ttl {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
   .skill_figure_text {
     font-size: 16px;
@@ -528,7 +541,7 @@ p.profile_txt {
     order: 1;
   }
   .skill_txt_ttl {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
   .skill_txt_ttl::before {
     top: 15px;
@@ -542,55 +555,6 @@ p.profile_txt {
 }
 
 /* 5 next */
-.index_next {
-  background: #bbc9c0;
-}
-.index_next .index_section_ttl {
-  color: #fff;
-  text-align: center;
-}
-.index_next .index_section_inner {
-  width: calc(100% - 20px);
-  margin: 0 auto;
-}
-.next_icon {
-  width: 80px;
-  margin: 0 auto 25px;
-  color: #737474;
-  border: 1px solid #737474;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 1.7;
-  font-size: 1.1rem;
-  padding: 13px 0 27px;
-  font-weight: bold;
-  position: relative;
-  bottom: 0;
-}
-.next_icon::before {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-left: 3px solid #6d6d6d;
-  border-bottom: 3px solid #6d6d6d;
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-45deg);
-  animation: arrow 1s ease-in-out infinite;
-}
-@keyframes arrow {
-  0% {
-    bottom: 10px;
-  }
-  50% {
-    bottom: 15px;
-  }
-  100% {
-    bottom: 10px;
-  }
-}
 .next_btn {
   display: block;
   background: #6d6d6d;
@@ -606,14 +570,8 @@ p.profile_txt {
   background: rgba(109, 109, 109, 0.7);
 }
 @media screen and (min-width: 767px) {
-  .next_icon {
-    margin-bottom: 40px;
-    font-size: 1.6rem;
-    line-height: 1.1;
-    padding: 15px 0 26px;
-  }
   .next_btn {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -660,9 +618,6 @@ p.profile_txt {
   background: #f27360;
 }
 @media screen and (min-width: 767px) {
-  .works .index_section_ttl {
-    margin-bottom: 130px;
-  }
   .work_icon_txt {
     font-size: 1.7rem;
   }
@@ -797,10 +752,6 @@ p.profile_txt {
 
 .works {
   background: #f2f5f7;
-}
-.works .index_section_ttl {
-  text-align: center;
-  margin-bottom: 40px;
 }
 .work_icon_img {
   width: 60%;
@@ -951,4 +902,85 @@ p.profile_txt {
 @media screen and (min-width: 767px) {
   .modal_content {
   }
+}
+
+
+
+/* tuika  */
+.slideshow{
+	background-color: rgb(0,0,0);
+	height:200px;
+	position:relative;
+	width:100%;
+	margin:auto;
+}
+ 
+.slide-screen{
+	position:relative;
+	height:200px;
+	left:50%;
+	transform: translateX(-50%);
+    -webkit- transform: translateX(-50%);
+	width:300px;
+	overflow: visible;
+}
+ 
+.slideshow-slides{
+	position:absolute;
+	height:200px;
+	width:1000%;
+}
+ 
+.slideshow-slides .slide{
+	float:left;
+	cursor: pointer;
+}
+ 
+.slide img{
+	width:300px;
+}
+ 
+/* ナビゲーション */
+.slideshow-nav a{
+	position:absolute;
+	top:50%;
+	margin-top:-28px;
+}
+ 
+.slideshow-nav a.prev{
+	left:0%;
+	margin-left: 10px;
+}
+ 
+.slideshow-nav a.next{
+	right:0%;
+	margin-right:10px;
+}
+ 
+.slideshow-nav a.disabled{
+	display:none;
+}
+ 
+/* インジケーター */
+.slideshow-indicator{
+	position:absolute;
+	text-align: center;
+	right:0;
+	left:0;
+	bottom:0;
+}
+ 
+.slideshow-indicator a{
+	display:inline-block;
+	margin:0 3px;
+	width:10px;
+	height:10px;
+	background-color:#fff;
+	opacity: 50%;
+	border-radius: 50%;
+}
+ 
+.slideshow-indicator a.active{
+	cursor:default;
+	opacity: 100%;
 }

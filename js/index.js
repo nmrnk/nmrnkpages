@@ -38,18 +38,6 @@ $(function () {
   //   }
   // });
 
-  // skill図
-  const target = $('#skill');
-  const el = target.offset().top;
-  $(window).scroll(function () {
-    const scroll = $(this).scrollTop();
-    if (scroll > el - 80) {
-      target.addClass('active');
-    }
-  });
-});
-
-$(function () {
   $('.tab > div:not(' + $('a.selected').attr('href') + ')').hide();
 
   $('#tabPages a').click(function () {
@@ -87,5 +75,15 @@ $(function () {
 
   $('#aa').click(function () {
     alert('re');
+  });
+
+  // skill図
+  const target = $('#skill');
+  const el = target.offset().top;
+  $(window).scroll(function () {
+    const scroll = $(this).scrollTop();
+    if (scroll > el - 80) {
+      target.addClass('active');
+    }
   });
 });
