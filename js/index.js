@@ -86,4 +86,26 @@ $(function () {
       target.addClass('active');
     }
   });
+
+  $('.slick01').slick({
+    autoplay: true,
+    arrows: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 2,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });

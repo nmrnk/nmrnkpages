@@ -222,7 +222,7 @@ h2.index_section_ttl {
   z-index: 1;
 }
 .nav_sp_btn {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.4);
   width: 40px;
   height: 40px;
   position: fixed;
@@ -275,9 +275,12 @@ h2.index_section_ttl {
   width: 55px;
 }
 /* main */
+.index_hero {
+  background: rgba(255, 255, 255, 0.7);
+}
 .index_hero_content {
   width: 100%;
-  padding-top: 146.6%;
+  padding-top: 50%;
   background: url('../img/main1.jpg') no-repeat center/cover;
   max-height: 800px;
   position: relative;
@@ -285,7 +288,7 @@ h2.index_section_ttl {
 .index_hero_txt {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #aaa;
+  color: #4d4844;
   letter-spacing: 0.09em;
   display: none;
   position: relative;
@@ -295,9 +298,18 @@ h2.index_section_ttl {
 .index_hero_txt span {
   font-size: 50%;
 }
+
+.main_slide {
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.slick01 li a {
+  display: block;
+  margin: 0 10px;
+}
 @media screen and (min-width: 767px) {
   .index_hero_content {
-    padding-top: 55.5%;
+    padding-top: 15%;
     background-attachment: fixed;
   }
   .index_hero_txt {
@@ -307,6 +319,12 @@ h2.index_section_ttl {
   }
   .index_hero_txt span {
     font-size: 1.2rem;
+  }
+  .main_slide {
+    padding-bottom: 100px;
+  }
+  .slick01 li a {
+    margin: 0 30px;
   }
 }
 
