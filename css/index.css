@@ -850,7 +850,7 @@ p.profile_txt span {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url('./img/expansion.png') no-repeat center/contain;
+  background: url('../img/expansion.png') no-repeat center/contain;
   position: absolute;
   top: 5px;
   right: 5px;

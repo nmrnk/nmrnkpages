@@ -62,7 +62,6 @@ $(function () {
   $('.modal-open').each(function () {
     $(this).click(function () {
       const target = $(this).attr('href');
-      console.log(target);
       const modal = document.getElementById(target);
       $(modal).fadeIn();
       return false;
@@ -82,11 +81,12 @@ $(function () {
   const el = target.offset().top;
   $(window).scroll(function () {
     const scroll = $(this).scrollTop();
-    if (scroll > el - 80) {
+    if (scroll + 550 > el) {
       target.addClass('active');
     }
   });
 
+  // mv slick
   $('.slick01').slick({
     autoplay: true,
     arrows: true,
