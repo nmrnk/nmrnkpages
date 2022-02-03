@@ -90,9 +90,10 @@ $(function () {
   $('.slick01').slick({
     autoplay: true,
     arrows: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     slidesToShow: 2,
     centerMode: true,
+    dots: true,
     responsive: [
       {
         breakpoint: 768,

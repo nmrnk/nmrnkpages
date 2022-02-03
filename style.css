@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*————————————————————————————————*/
+/* Reset */
+/*————————————————————————————————*/
+* {
+  all: unset;
+  unicode-bidi: normal;
+  direction: ltr;
+}
+
+/*————————————————————————————————*/
+/* Display */
+/*————————————————————————————————*/
+head,
+link,
+meta,
+style,
+title,
+script {
+  display: none;
+}
+html,
+body,
+p,
+form {
+  display: block;
+}
+input {
+  display: inline-block;
+}
+
+/*————————————————————————————————*/
+/* Style */
+/*————————————————————————————————*/
+html {
+  height: 100%;
+  background-color: #f2eae6;
+}
+input {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  margin: 20px 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ccc;
+  font-size: 30px;
+}
+input::placeholder {
+  font-family: 'Orbitron', sans-serif;
+  color: #e5e5e5;
+}
+form {
+  text-align: center;
+  margin: calc(50vh - 100px) auto 0;
+  max-width: 400px;
+  width: 90vw;
+}
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000;
+}
