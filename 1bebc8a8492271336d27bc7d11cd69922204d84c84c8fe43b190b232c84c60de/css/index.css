@@ -563,21 +563,16 @@ p.profile_txt span {
   position: relative;
 }
 .skill_txt_ttl::before {
-  content: '';
+  content: '■';
   display: inline-block;
-  width: 15px;
-  height: 2px;
-  background: #f27360;
-  position: absolute;
-  top: 11px;
-  left: -6px;
-  z-index: -1;
+  color: #f27360;
+  margin-right: 5px;
 }
 .design.skill_txt_ttl::before {
-  background: #9aa9ba;
+  color: #9aa9ba;
 }
 .direction.skill_txt_ttl::before {
-  background: #434373;
+  color: #434373;
 }
 .skill_list {
   margin-bottom: 30px;
