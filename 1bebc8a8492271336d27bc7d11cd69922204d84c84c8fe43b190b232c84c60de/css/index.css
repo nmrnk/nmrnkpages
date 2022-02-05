@@ -580,7 +580,7 @@ p.profile_txt span {
 @media screen and (min-width: 767px) {
   .copy {
     font-size: 1.6rem;
-    padding: 70px 0;
+    padding: 30px 0;
   }
 }
 
