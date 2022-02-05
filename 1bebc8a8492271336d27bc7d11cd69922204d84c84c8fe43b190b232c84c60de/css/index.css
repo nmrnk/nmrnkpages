@@ -149,7 +149,7 @@ h2.index_section_ttl {
   align-items: stretch;
 }
 .header-logo {
-  max-width: 65px;
+  max-width: 25px;
 }
 .header_content {
   position: relative;
@@ -272,7 +272,6 @@ h2.index_section_ttl {
 }
 .top_logo a {
   display: block;
-  width: 55px;
 }
 /* main */
 .index_hero {
@@ -284,6 +283,7 @@ h2.index_section_ttl {
   background: url('../img/main1.jpg') no-repeat center/cover;
   max-height: 800px;
   position: relative;
+  z-index: 0;
 }
 
 .index_hero_txt {
@@ -293,8 +293,8 @@ h2.index_section_ttl {
   letter-spacing: 0.09em;
   display: none;
   position: relative;
-  top: -64px;
-  left: 55px;
+  top: -25px;
+  left: 35px;
 }
 .index_hero_txt span {
   font-size: 50%;
@@ -343,15 +343,17 @@ h2.index_section_ttl {
   padding: 3px;
   max-width: 70%;
 }
+
 @media screen and (min-width: 767px) {
   .index_hero_content {
-    padding-top: 15%;
+    padding-top: 10%;
+    padding-bottom: 5%;
     background-attachment: fixed;
   }
   .index_hero_txt {
     font-size: 2rem;
-    top: 0;
-    left: 15px;
+    top: -30px;
+    left: 40px;
   }
   .index_hero_txt span {
     font-size: 1.2rem;
@@ -374,8 +376,6 @@ h2.index_section_ttl {
 /* profile */
 #profile {
   background: #f2eae7;
-  position: relative;
-  z-index: -2;
 }
 .profile_img {
   max-width: 200px;
