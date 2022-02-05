@@ -141,13 +141,12 @@ h2.index_section_ttl {
 2 header
 ---------------------------------------------*/
 .header {
-  height: 100px;
   position: fixed;
   width: 100%;
-  /* background: #fff; */
   z-index: 100;
   top: 0;
   color: #aaa;
+  height: 0px;
 }
 .header-logoarea {
   display: flex;
@@ -161,6 +160,7 @@ h2.index_section_ttl {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  height: 100%;
 }
 
 .header_menu {
@@ -177,11 +177,14 @@ h2.index_section_ttl {
 .header_menu li a:hover {
   opacity: 0.7;
 }
+.header .index_section_inner {
+  height: 100%;
+}
 @media (max-width: 1020px) and (min-width: 768px) {
 }
 @media screen and (min-width: 768px) {
   .header {
-    top: 20px;
+    top: 15px;
   }
   .header_menu li a {
     font-size: 1vw;
@@ -657,6 +660,11 @@ p.profile_txt span {
   font-size: 1.1rem;
   text-align: center;
   line-height: 1.8;
+}
+.work_caption {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 .work_txt:hover {
   opacity: 0.7;
