@@ -148,11 +148,6 @@ h2.index_section_ttl {
   color: #aaa;
   height: 0px;
 }
-.header-logoarea {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-}
 .header-logo {
   max-width: 25px;
 }
@@ -302,8 +297,6 @@ h2.index_section_ttl {
   letter-spacing: 0.09em;
   display: none;
   position: relative;
-  top: -25px;
-  left: 35px;
 }
 .index_hero_txt span {
   font-size: 50%;
@@ -361,8 +354,6 @@ h2.index_section_ttl {
   }
   .index_hero_txt {
     font-size: 2rem;
-    top: -30px;
-    left: 40px;
   }
   .index_hero_txt span {
     font-size: 1.2rem;

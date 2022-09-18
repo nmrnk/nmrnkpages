@@ -13,14 +13,14 @@ $(function () {
   // mvスライド
   $('.bg-slider').bgSwitcher({
     images: [
-      'https://nmrnk.github.io/nmrnkpages/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main1.jpg',
-      'https://nmrnk.github.io/nmrnkpages/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main2.jpg',
-      'https://nmrnk.github.io/nmrnkpages/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main3.jpg',
-      'https://nmrnk.github.io/nmrnkpages/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main4.jpg',
-      // '../img/main1.jpg',
-      // '../img/main2.jpg',
-      // '../img/main3.jpg',
-      // '../img/main4.jpg',
+      // 'https://nmrnk.github.io/nmrnkpages/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main1.jpg',
+      // 'https://nmrnk.github.io/nmrnkpages/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main2.jpg',
+      // 'https://nmrnk.github.io/nmrnkpages/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main3.jpg',
+      // 'https://nmrnk.github.io/nmrnkpages/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main4.jpg',
+      '/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main1.jpg',
+      '/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main2.jpg',
+      '/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main3.jpg',
+      '/1bebc8a8492271336d27bc7d11cd69922204d84c84c8fe43b190b232c84c60de/img/main4.jpg',
     ], // 切り替える背景画像を指定
     interval: 3000,
   });
